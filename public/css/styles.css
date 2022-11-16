@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700');
+
+:root {
+    --bs-heading-color: #344767;
+}
+
+.slider__banner--img {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+    height: 100%;
+}
+
+.flickity-viewport {
+    height: 580px !important;
+}
+
+/* no circle */
+.flickity-button {
+
+    background: transparent;
+}
+.flickity-button:hover {
+    
+    background: transparent;
+    color: black;
+}
+
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+.flickity-button-icon {
+    fill: red;
+}
+.flickity-button:disabled {
+    display: none;  
+}
+
+.section--title h2 {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #344767;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+    
+.carousel {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 580px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+}
+.carousel__cell {
+    margin-top: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    float: right;
+    max-width: 400px;
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+    counter-increment: carousel__cell--img;
+    transition: all .3s ease;
+    opacity: 0.3;
+    background: #b9b9b9;
+    filter: blur(6px);
+
+}
+.carousel__cell.is-selected {
+    filter: blur(0);
+    opacity: 1;
+    background: white ;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    
+/* Carousel cell title */
+.carousel__cell--title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+    color:var(--bs-heading-color);
+    counter-increment: carousel__cell;
+}
+    
+/* Carousel cell description */
+.carousel__cell--description {
+    margin: auto;
+    width: 90%;
+    padding: 1px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #7B809A;
+    text-align: left;
+    counter-increment: carousel__cell;
+    transition: all .3s ease;
+}
+
+.carousel__cell--description span {
+    width: 100%;
+    display: block;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/* picture */
+.carousel__cell--img {
+    border-radius: 15px;
+    width: 100%;
+    height: 280px;
+    counter-increment: carousel__cell;
+}
+    
