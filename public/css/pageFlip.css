@@ -24,7 +24,7 @@ body {
 
 .cover {
   width: calc(var(--baseline) * 80);
-  height: calc(var(--baseline) * 55);
+  /* height: calc(var(--baseline) * 55); */
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
 }
 

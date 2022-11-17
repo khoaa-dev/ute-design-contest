@@ -28,32 +28,32 @@
         <div class="relative z-20">
             <nav id="navbar" class="rounded-lg fixed overflow-visible block top-0 w-full" style="background-image: linear-gradient(to right, rgba(33, 136, 239, 0.5), rgb(125, 9, 9)); border: 0.5px solid #ccc">
                 <div class="container-fluid md:flex justify-center">
-                    <ul class="md:flex text-xl">
-                        <li class=" py-3 px-6" style="">
+                    <ul id="navbar__menu" class="md:flex text-xl">
+                        <li class="navbar__menu--item py-3 px-6" style="">
                             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-house"></i>
                                 <span class="text-white">Trang chủ</span>
                             </a>
                         </li>
-                        <li class=" py-3 px-6" style="">
+                        <li class="navbar__menu--item py-3 px-6" style="">
                             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-sharp fa-solid fa-building-flag"></i>
                                 <span class="text-white">Đơn vị</span>
                             </a>
                         </li>
-                        <li class=" py-3 px-6" style="">
+                        <li class="navbar__menu--item py-3 px-6" style="">
                             <a href="">
                                 <i class="fa-solid fa-newspaper"></i>
                                 <span class="text-white">Tin tức - Sự kiện</span>
                             </a>
                         </li>
-                        <li class=" py-3 px-6" style="">
+                        <li class="navbar__menu--item py-3 px-6" style="">
                             <a href="">
                                 <i class="fa-solid fa-bullhorn"></i>
                                 <span class="text-white">Thông báo</span>
                             </a>
                         </li>
-                        <li class=" py-3 px-6" style="">
+                        <li class="navbar__menu--item py-3 px-6" style="">
                             <a href="">
                                 <i class="fa-solid fa-school"></i>
                                 <span class="text-white">Đào tạo</span>
@@ -153,52 +153,15 @@
                     
                     <!-- Goes to the second page -->
                     <input type="radio" name="page" id="page-2"/>
-                    <label class="book__page book__page--2">
-                        <div class="book__page-front">
+                    <label  class="book__page book__page--2">
+                        <div id="page__flip--effect" class="book__page-front">
                             <div class="page__content">
                                 <img src="./public/images/invitation_page-1.png" alt="">
                             </div>
-                            <!-- <div class="page__content">
-                                <h1 class="page__content-book-title">Foundation</h1>
-                                <h2 class="page__content-author">Isaac Asimov</h2>
-                                
-                                <p class="page__content-credits">
-                                    Introduction by 
-                                    <span>Paul Krugman</span>
-                                </p>
-                                
-                                <p class="page__content-credits">
-                                    Illustrations by 
-                                    <span>Alex Wells</span>
-                                </p>
-                                
-                                <div class="page__content-copyright">
-                                    <p>The Folio Society</p>
-                                    <p>London - MMXII</p>
-                                </div>
-                            </div> -->
                         </div>
                         <div class="book__page-back">
                             <div class="page__content">
-                                <!-- <h1 class="page__content-title">Contents</h1> -->
                                 <img src="./public/images/invitation_page-2.png" alt="">
-                                <!-- <table class="page__content-table">
-                                    <tr>
-                                        <td align="left">11 - 12/11/2022</td><td align="left">Hội thảo khoa học ATiGB 2022</td><td align="right">3</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">17/11/2022</td><td align="left">The Encyclopedists</td><td align="right">43</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">Part III</td><td align="left">The Mayors</td><td align="right">87</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">Part IV</td><td align="left">The Traders</td><td align="right">147</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">Part V</td><td align="left">The Merchant Princes</td><td align="right">173</td>
-                                    </tr>
-                                </table> -->
                                 
                                 <div class="page__number">2</div>
                             </div>
@@ -221,23 +184,49 @@
                     <p class="text-sm mt-2">Ngày 12/11, Trường Đại học (ĐH) Sư phạm Kỹ thuật-Đại học Đà Nẵng (ĐHĐN) vừa long trọng tổ chức Lễ Trao Bằng Tốt nghiệp ĐH...</p>
                 </div>
                 <div class="list__news--item mr-4 ml-4">
+                    <img src="./public/images/news-7.jpg" alt="">
+                    <span class="text-base">Trường Đại học Sư phạm Kỹ thuật-ĐHĐN: Hứng khởi với Lễ Khai giảng lần đầu tiên tổ chức tại Khu Đô thị đại học</span>
+                    <p class="mt-2"><small>11 tháng 10 2022</small></p>
+                    <p class="text-sm mt-2">Sáng ngày 10/10, Trường Đại học Sư phạm Kỹ thuật-Đại học Đà Nẵng (ĐHĐN) lần đầu tiên tổ chức Lễ Khai giảng năm học 2022-2023.</p>
+                </div>
+                <div class="list__news--item mr-4 ml-4">
+                    <img src="./public/images/news-5.jpg" alt="">
+                    <span class="text-base">Bản tin thời sự Đài VTV8 và DaNangTV ngày 8/11/2022 về Lễ khánh thành Phòng Nghiên cứu và Đào tạo thực hành chuyển đổi số</span>
+                    <p class="mt-2"><small>11 tháng 11 2022</small></p>
+                    <p class="text-sm mt-2">Bản tin thời sự Đài VTV8 và DaNangTV ngày 8/11/2022 về Lễ khánh thành Phòng Nghiên cứu và Đào tạo thực hành chuyển đổi số...</p>
+                </div>
+                <div class="list__news--item mr-4 ml-4">
+                    <img src="./public/images/news-6.jpeg" alt="">
+                    <span class="text-base">Trường Đại học Sư phạm Kỹ thuật – Đại học Đà Nẵng nhận đăng cai tổ chức Hội nghị khoa học quốc gia FAIR năm 2023</span>
+                    <p class="mt-2"><small>10 tháng 11 2022</small></p>
+                    <p class="text-sm mt-2">Tại phiên khai mạc, Ban Tổ chức Hội nghị FAIR đã chính thức trao Cờ luân lưu cho Trường Đại học Sư phạm Kỹ thuật (ĐHSPKT).</p>
+                </div>
+                <div class="list__news--item mt-4 mr-4 ml-4">
+                    <img src="./public/images/news-8.jpg" alt="">
+                    <span class="text-base">Giấy mời dự Lễ kỷ niệm 60 năm xây dựng và phát triển Trường ĐH Sư phạm Kỹ thuật - ĐH Đà Nẵng (1962-2022).</span>
+                    <p class="mt-2"><small>10 tháng 11 2022</small></p>
+                    <p class="text-sm mt-2">Giấy mời dự Lễ kỷ niệm 60 năm XD&PT Tr. ĐHSPKT (1962-2022)</p>
+                </div>
+                <div class="list__news--item mt-4 mr-4 ml-4">
                     <img src="./public/images/news-1.jpg" alt="">
                     <span class="text-base">Hai nữ sinh viên của Đại học Đà Nẵng vinh dự được trao Giải thưởng "Nữ sinh Khoa học Công nghệ Việt Nam năm 2022"</span>
                     <p class="mt-2"><small>09 tháng 11 2022</small></p>
                     <p class="text-sm mt-2">Vừa qua, 2 nữ sinh viên (SV) của Đại học Đà Nẵng (ĐHĐN) vinh dự thuộc Top 20 nữ sinh tiêu biểu...</p>
                 </div>
-                <div class="list__news--item mr-4 ml-4">
+                <div class="list__news--item mt-4 mr-4 ml-4">
                     <img src="./public/images/news-2.jpg" alt="">
                     <span class="text-base">Trường ĐH Sư phạm Kỹ thuật – ĐH Đà Nẵng tổ chức Lễ khánh thành Phòng Nghiên cứu và Đào tạo thực hành chuyển đổi số do Tập đoàn Đầu tư...</span>
                     <p class="mt-2"><small>08 tháng 11 2022</small></p>
                     <p class="text-sm mt-2">Ngày 08/11/2022, Trường Đại học Sư phạm Kỹ thuật – Đại học Đà Nẵng (ĐHĐN) đã tổ chức Lễ khánh thành Phòng Nghiên cứu và Đào...</p>
                 </div>
-                <div class="list__news--item mr-4 ml-4">
+                <div class="list__news--item mt-4 mr-4 ml-4">
                     <img src="./public/images/news-3.jpg" alt="">
                     <span class="text-base">Đại học Đà Nẵng tổ chức trao Giải thưởng Sinh viên nghiên cứu khoa học năm học 2021-2022 và Festival - Triển lãm Sáng tạo trẻ lần thứ IV năm 2022</span>
                     <p class="mt-2"><small>22 tháng 10 2022</small></p>
                     <p class="text-sm mt-2">Sáng ngày 22/10, hướng tới kỷ niệm 40 năm Ngày Nhà giáo Việt Nam (20/11/1982-20/11/2022), Đại học Đà Nẵng (ĐHĐN) long...</p>
                 </div>
+                
+                
             </div>
         </div>
 
@@ -245,13 +234,12 @@
         <section class="bg-white dark:bg-gray-900 rounded-lg mt-12">
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
                 <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Team</h2>
-                    <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Người thực hiện</h2>
                 </div> 
                 <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
                     <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                         <a href="#" class="w-6/12">
-                            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./public/images/avt_1.jpg" alt="Bonnie Avatar">
+                            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./public/images/avt_1.jpg" alt="Bonnie Avatar" loading="lazy">
                         </a>
                         <div class="p-5">
                             <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -285,7 +273,7 @@
                     </div> 
                     <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                         <a href="#" class="w-6/12">
-                            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./public/images/avt_2.jpg" alt="Jese Avatar">
+                            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./public/images/avt_2.jpg" alt="Jese Avatar" loading="lazy">
                         </a>
                         <div class="p-5">
                             <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -328,7 +316,7 @@
 
     <!-- Footer -->
         
-    <footer class="w-full bg-white ">
+    <footer class="w-full bg-white " loading="lazy">
         <div class="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4 text-center">
             <div class="flex justify-end">
                 <img src="./public/images/logo_ute.png" alt="">

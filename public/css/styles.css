@@ -142,3 +142,19 @@
 .list__news--item span:hover {
     color: #031434;
 }
+
+.navbar__menu--item {
+    transition: all 0.25s;
+}
+
+.navbar__menu--item:hover {
+    transform: scale(1.1);
+    
+}
+
+.navbar__menu--item:hover span {
+    color: #031434;
+    font-weight: 700;
+}
+
+
